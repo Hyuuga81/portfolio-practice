@@ -1,0 +1,105 @@
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+/* PORTFOLIO */
+
+.hide {
+    display: none !important;
+}
+
+#portfolio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background: gray;
+    padding: 100px 0 250px 0;
+}
+
+#portfolio h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.project {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    position: relative;
+    margin: 20px;
+}
+
+.project img {
+    width: 100%;
+}
+
+.glide {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background: #000;
+    opacity: 0.8;
+}
+
+.glide a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    border-bottom: 4px solid #fb8112;
+}
+
+.glide .more-info {
+
+    text-align: center;
+}
+
+.glide .directions {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
