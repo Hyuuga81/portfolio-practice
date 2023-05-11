@@ -34,7 +34,7 @@ moreInfo.forEach(item => {
         details.innerText = `
                           Using the sticky notes app, you can make several sticky notes and delete them as you see fit. And when you leave the app it saves your changes.  
                           `;
-        tools.innerText = `React, JSX, CSS.`;
+        tools.innerText = `Tools used: React, JSX, CSS.`;
       }
       
     } else if (item.classList.contains("name-tag")) {
@@ -43,36 +43,44 @@ moreInfo.forEach(item => {
       details.innerText = `
                           The name tag generator allows you to make a name tag by simply entering the name you want in the input. You can also delete name tags individually. Your changes are saved until your next visit.   
                           `;
-      tools.innerText = `React, JSX, CSS.`;
+      tools.innerText = `Tools used: React, JSX, CSS.`;
     } else if (item.classList.contains("github")) {
       modal.classList.remove("hide");
       heading.innerText = "Github Repo Gallery";
       details.innerText = `
                           Using the sticky notes app, you can make several sticky notes and delete them as you see fit. And when you leave the app and come back it remembers your notes.  
                           `;
-      tools.innerText = `JavaScript, HTML, CSS.`;
+      tools.innerText = `Tools used: JavaScript, HTML, CSS.`;
     } else if (item.classList.contains("guess")) {
       modal.classList.remove("hide");
       heading.innerText = "Guess The Word Game";
       details.innerText = `
                           This game allows you to guess a word one letter at a time. The input checks that you follow the rules such as adding one letter at a time. You get 8 tries and when you win you are congratulated. Give it a try.   
                           `;
-      tools.innerText = `JavaScript, HTML, CSS, APIs.`;
+      tools.innerText = `Tools used: JavaScript, HTML, CSS, APIs.`;
     } else if (item.classList.contains("unplugged")) {
       modal.classList.remove("hide");
       heading.innerText = "Unplugged";
       details.innerText = `
                           An information site for a technology free retreat. Despite the retreat being tech-free, the site is completely responsive and uses forms and iframes to help gather and provide information to all potential visitors. 
                           `;
-      tools.innerText = `HTML, CSS.`;
+      tools.innerText = `Tools used: HTML, CSS.`;
     } else if (item.classList.contains("sunnyside")) {
       modal.classList.remove("hide");
       heading.innerText = "Sunnyside Creative Agency";
       details.innerText = `
                           This full service creative agency's site includes a uniquely shaped drop-down menu, is fully responsive and is full of bright and geometric imagery that leaves a lasting impression on visitors.  
                           `;
-      tools.innerText = `JavaScript, HTML, CSS.`;
+      tools.innerText = `Tools used: JavaScript, HTML, CSS.`;
     }
 
   })
 });
+
+const xmark = document.querySelector(".modal-contents button");
+
+xmark.addEventListener("click", function() {
+  modal.classList.add("hide");
+});
+
+
