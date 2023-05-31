@@ -50,13 +50,17 @@ section {
     padding: 100px 0 250px 0;
 }
 
+#portfolio .container {
+    justify-content: space-around;
+}
+
 #portfolio h2 {
     width: 100%;
     text-align: center;
 }
 
 .project {
-    width: 30%;
+    width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
